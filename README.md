@@ -23,6 +23,7 @@ Designed and analyzed a full A/B experiment on product feature adoption — from
 ### Adoption Funnel
 ![Funnel Dashboard](images/dashboard-funnel.png)
 
+### 📊 Dashboard PDF: [View A/B Test Dashboard](./outputs/AB_Test_Dashboard.pdf)
 ---
 
 ## 🧪 Methodology
