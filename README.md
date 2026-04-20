@@ -24,6 +24,7 @@ Designed and analyzed a full A/B experiment on product feature adoption — from
 ![Funnel Dashboard](images/dashboard-funnel.png)
 
 ### 📊 Dashboard PDF: [View A/B Test Dashboard](./outputs/AB_Test_Dashboard.pdf)
+### 📥 [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/1uTDF4gmt2eBWq7VLDVz7wvWJI9ZE8Fr7/view?usp=sharing)
 ---
 
 ## 🧪 Methodology
