@@ -1,9 +1,7 @@
 # 📊 Product Feature Adoption & A/B Test Analysis
 
 ## Overview
-Simulated and analyzed a randomized A/B test to measure the impact of a new
-in-app feature on 7-day user retention. Segmented results by new vs returning
-users and delivered a data-backed ship/iterate decision memo.
+Designed and analyzed a full A/B experiment on product feature adoption — from hypothesis design to statistical testing to a segmented ship/iterate decision memo — using Python and Power BI.
 
 ## Key Finding
 - New users: **+23.7% relative lift** in Day-7 retention (p = 0.000046) ✓ Significant
@@ -79,7 +77,11 @@ users and delivered a data-backed ship/iterate decision memo.
 - **Python** → Data simulation & statistical analysis  
 - **Power BI** → Dashboard & visualization  
 - **CSV / Excel** → Data handling  
-- **Git & GitHub** → Version control  
+- **Git & GitHub** → Version control
+- ![Python](https://img.shields.io/badge/Python-3.12-blue)
+![PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![pandas](https://img.shields.io/badge/pandas-2.0-green)
+![scipy](https://img.shields.io/badge/scipy-stats-orange)
 
 ---
 
@@ -133,7 +135,11 @@ A visible lift in metrics does not always imply a meaningful impact — **valida
 | Returning users | 50.8% | 53.8% | +5.9% | 0.179 | ✗ |
 ---
 
-## 🔗 Connect
+## 🤝 Let’s Connect
 
-If you found this project interesting or have feedback, feel free to connect or reach out!
+Interested in product analytics, experimentation, or data-driven product decisions?  
+I’m always open to meaningful conversations, feedback, or collaboration opportunities.
+
+- LinkedIn: https://www.linkedin.com/in/workwitheesha/
+- Email: workwitheesha@gmail.com
 
