@@ -11,10 +11,19 @@ users and delivered a data-backed ship/iterate decision memo.
 - Decision: **Ship for new users. Iterate for returning users.**
 
 ---
-
 ## 📈 Dashboard Preview
 
+### Executive Summary
+![Executive Dashboard](images/dashboard-executive.png)
 
+### Statistical Deep Dive
+![Statistical Dashboard](images/dashboard-statistical.png)
+
+### Segmentation Breakdown
+![Segmentation Dashboard](images/dashboard-segmentation.png)
+
+### Adoption Funnel
+![Funnel Dashboard](images/dashboard-funnel.png)
 
 ---
 
