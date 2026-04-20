@@ -1,7 +1,7 @@
 # 📊 Product Feature Adoption & A/B Test Analysis
 
 ## Overview
-Designed and analyzed a full A/B experiment on product feature adoption — from hypothesis design to statistical testing to a segmented ship/iterate decision memo — using Python and Power BI.
+Designed and analyzed a full A/B experiment on product feature adoption, from hypothesis design to statistical testing to a segmented ship/iterate decision memo, using Python and Power BI.
 
 ## Key Finding
 - New users: **+23.7% relative lift** in Day-7 retention (p = 0.000046) ✓ Significant
