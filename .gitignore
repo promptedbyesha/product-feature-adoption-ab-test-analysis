@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore generated visuals (can be regenerated)
+outputs/charts/
+
+# Optional: ignore large temp files
+*.log
