@@ -41,9 +41,10 @@ Designed and analyzed a full A/B experiment on product feature adoption, from hy
 - Decision: **Ship for new users. Iterate for returning users.**
 
 → Full numbers and p-values in the [Results Summary](#results-summary) below.
+
 ## 🎯 Final Decision
 
-This analysis goes beyond measuring uplift — it evaluates **where**, **for whom**, and **whether** the feature should be shipped.
+This analysis goes beyond measuring uplift, it evaluates **where**, **for whom**, and **whether** the feature should be shipped.
 
 - ✅ Ship for new users  
 - ⚠ Iterate for returning users  
@@ -93,7 +94,7 @@ This confirms that the observed lift for new users is reliable, while for return
 - No significant impact on returning users indicates the feature may not improve behavior for already engaged users  
  
 👉 Strategic takeaway:  
-A targeted rollout — rather than a universal one — maximizes growth impact while preserving the opportunity to improve the experience for returning users.
+A targeted rollout — rather than a universal one, maximizes growth impact while preserving the opportunity to improve the experience for returning users.
 
 ---
 ## 🔎 Deeper Product Insight
@@ -103,7 +104,7 @@ Although users who engage with the feature show higher retention, the overall ef
 This suggests:
 - Possible behavioral differences between new and returning users  
 - Feature may be more effective during onboarding than for habitual usage  
-- Potential selection bias — more engaged users are more likely to use the feature
+- Potential selection bias, more engaged users are more likely to use the feature
   
 👉 Key takeaway:  
 Not all statistically significant results translate into universal product wins, segmentation is critical to avoid misleading aggregate conclusions. 
