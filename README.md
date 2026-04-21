@@ -91,9 +91,9 @@ This confirms that the observed lift for new users is reliable, while for return
 - A +23.7% relative lift in retention for new users suggests strong early-stage engagement improvement  
 - If scaled, this could significantly increase user activation and long-term retention (LTV)  
 - No significant impact on returning users indicates the feature may not improve behavior for already engaged users  
-
+ 
 👉 Strategic takeaway:  
-Roll out the feature for new users to maximize growth impact, while iterating on experience for returning users.
+A targeted rollout — rather than a universal one — maximizes growth impact while preserving the opportunity to improve the experience for returning users.
 
 ---
 ## 🔎 Deeper Product Insight
@@ -139,13 +139,13 @@ The feature is likely an **activation driver**, not a **retention enhancer** for
 
 ## 📊 Explore the Dashboard
 
-**Quick view (no setup needed):**  
+**🔎 Quick view (no setup needed):**  
 👉 [View Dashboard as PDF](./outputs/AB_Test_Dashboard.pdf)  
-*A static version to quickly understand insights and final decision*
+*A static snapshot to quickly understand the key insights and final decision*
 
-**Interactive version (recommended):**  
+**💻 Interactive analysis (recommended):**  
 👉 [Download Power BI File (.pbix)](https://drive.google.com/file/d/1uTDF4gmt2eBWq7VLDVz7wvWJI9ZE8Fr7/view?usp=sharing)  
-*Use filters, segments, and drilldowns for deeper analysis*
+*Open in Power BI Desktop to explore filters, segments, and drilldowns on your own system*
 
 ---
 ## 🚀 How to Explore the Dashboard
