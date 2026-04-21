@@ -1,11 +1,40 @@
 # 📊 Product Feature Adoption & A/B Test Analysis
-> A feature drove significant retention gains for new users — but showed no real impact for returning users.  
-> This project demonstrates how segmentation transforms a simple A/B test into a product decision.
+> Most A/B tests answer one question: *Did the feature work?*  
+> This project answers a better one: **For whom did it work, and should you ship it?**
 
-## Overview
+A new product feature showed a clear lift in retention at the aggregate level.  
+But segmentation revealed a critical nuance:
+
+👉 It significantly improved retention for **new users**  
+👉 It had **no meaningful impact** on returning users  
+
+Instead of a blanket rollout, this analysis leads to a **targeted product decision**:
+**Ship where it works. Iterate where it doesn’t.**
+
+---
+
+### 🎯 What to Expect
+
+This project walks through a complete, real-world A/B testing workflow:
+
+- Designing a controlled experiment with a clear hypothesis  
+- Simulating realistic product data (~5,000 users)  
+- Running statistical tests (chi-square, p-value, confidence intervals)  
+- Segmenting results to uncover hidden insights  
+- Analyzing feature adoption through a retention funnel  
+- Delivering a **decision memo** backed by data  
+
+**End result:** Not just analysis, a **defensible product decision.**
+> **End result:** Not just an analysis, a defensible product decision 
+> backed by chi-square testing, confidence intervals, and segment-level evidence.
+
+---
+
+
+## 🔎 Overview
 Designed and analyzed a full A/B experiment on product feature adoption, from hypothesis design to statistical testing to a segmented ship/iterate decision memo, using Python and Power BI.
 
-## Key Finding
+## 📑 Key Finding
 - New users: **+23.7% relative lift** in Day-7 retention (p = 0.000046) ✓ Significant
 - Returning users: +5.9% lift (p = 0.179) ✗ Not significant
 - Decision: **Ship for new users. Iterate for returning users.**
@@ -146,15 +175,19 @@ The feature is likely an **activation driver**, not a **retention enhancer** for
 ---
 
 ## 🛠 Tools & Technologies
-
-- **Python** → Data simulation & statistical analysis  
-- **Power BI** → Dashboard & visualization  
-- **CSV / Excel** → Data handling  
-- **Git & GitHub** → Version control
 - ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 ![pandas](https://img.shields.io/badge/pandas-2.0-green)
 ![scipy](https://img.shields.io/badge/scipy-stats-orange)
+
+- **Python** → Data simulation, statistical analysis, and chart exports  
+- **pandas + numpy** → Data manipulation and dataset generation  
+- **scipy** → Chi-square hypothesis testing and confidence interval calculation  
+- **matplotlib** → Data visualization and chart exports  
+- **Power BI** → Interactive 4-page dashboard and data storytelling  
+- **Excel / CSV** → Data validation, output review, and tabular analysis  
+- **Git + GitHub** → Version control and project documentation  
+
 
 ---
 
