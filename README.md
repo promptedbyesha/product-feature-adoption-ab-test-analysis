@@ -11,6 +11,8 @@ But segmentation revealed a critical nuance:
 Instead of a blanket rollout, this analysis leads to a **targeted product decision**:
 **Ship where it works. Iterate where it doesn’t.**
 
+📖 [Full Case Study on Notion](https://eshasharma.notion.site/Product-Feature-Adoption-A-B-Test-Analysis-34899496b51c80f88bb8f09bd396ac0c?source=copy_link)
+
 ---
 
 ### 🎯 What to Expect
@@ -24,21 +26,21 @@ This project walks through a complete, real-world A/B testing workflow:
 - Analyzing feature adoption through a retention funnel  
 - Delivering a **decision memo** backed by data  
 
-**End result:** Not just analysis, a **defensible product decision.**
-> **End result:** Not just an analysis, a defensible product decision 
-> backed by chi-square testing, confidence intervals, and segment-level evidence.
+> **End result:** Not just analysis — a defensible product decision backed by chi-square testing, confidence intervals, and segment-level evidence.
+
+---
+## 📌 Overview
+
+Designed and analyzed a full A/B experiment on product feature adoption, from hypothesis design to statistical testing to a segmented ship/iterate decision memo, using Python (pandas, scipy) and Power BI. The dataset was simulated in Python to reflect realistic product behavior patterns across 5,000 users.
 
 ---
 
-
-## 🔎 Overview
-Designed and analyzed a full A/B experiment on product feature adoption, from hypothesis design to statistical testing to a segmented ship/iterate decision memo, using Python and Power BI.
-
 ## 📑 Key Finding
-- New users: **+23.7% relative lift** in Day-7 retention (p = 0.000046) ✓ Significant
-- Returning users: +5.9% lift (p = 0.179) ✗ Not significant
+- New users showed a **statistically significant lift** in Day-7 retention ✓
+- Returning users showed **no meaningful impact** ✗
 - Decision: **Ship for new users. Iterate for returning users.**
 
+→ Full numbers and p-values in the [Results Summary](#results-summary) below.
 ## 🎯 Final Decision
 
 This analysis goes beyond measuring uplift — it evaluates **where**, **for whom**, and **whether** the feature should be shipped.
@@ -49,18 +51,6 @@ This analysis goes beyond measuring uplift — it evaluates **where**, **for who
 
 This ensures data-driven and context-aware product decisions.
 
-  
-
-## 📝 Methodology
-
-- A/B testing with **Control vs Test groups**
-- **Chi-square hypothesis testing**
-- **95% Confidence Intervals (CI)**
-- Segmentation analysis across:
-  - User type (new vs returning)
-  - Device (desktop, mobile, tablet)
-  - Region
-- Funnel analysis for feature adoption behavior
 
 ---
 ## 🧪 **Experiment Design**
@@ -122,6 +112,15 @@ Not all statistically significant results translate into universal product wins,
 The feature is likely an **activation driver**, not a **retention enhancer** for mature users.
 
 ---
+## 📊 Dashboard Structure (Power BI)
+
+- **Executive Summary:** Key metrics, retention lift, final decision  
+- **Statistical Deep Dive:** Significance testing, p-values, confidence intervals  
+- **Segmentation Breakdown:** Performance by user type, device, and region  
+- **Adoption Funnel:** Feature usage flow and retention impact
+  
+---
+
 ## 📈 Dashboard Preview
 
 ### Executive Summary
@@ -136,43 +135,36 @@ The feature is likely an **activation driver**, not a **retention enhancer** for
 ### Adoption Funnel
 ![Funnel Dashboard](images/dashboard-funnel.png)
 
-## 📊 **View Dashboard (No Power BI required):** [Open PDF](./outputs/AB_Test_Dashboard.pdf)
-### 📥 [Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/1uTDF4gmt2eBWq7VLDVz7wvWJI9ZE8Fr7/view?usp=sharing)
 ---
 
-## 📊 Key Metrics Tracked
+## 📊 Explore the Dashboard
 
-- Retention rate (control vs test)
-- Absolute lift
-- Relative lift (%)
-- p-value (statistical significance)
-- Chi-square statistic
-- Confidence intervals (CI)
+**Quick view (no setup needed):**  
+👉 [View Dashboard as PDF](./outputs/AB_Test_Dashboard.pdf)  
+*A static version to quickly understand insights and final decision*
+
+**Interactive version (recommended):**  
+👉 [Download Power BI File (.pbix)](https://drive.google.com/file/d/1uTDF4gmt2eBWq7VLDVz7wvWJI9ZE8Fr7/view?usp=sharing)  
+*Use filters, segments, and drilldowns for deeper analysis*
+
+---
+## 🚀 How to Explore the Dashboard
+
+If you're new to Power BI, follow this:
+
+1. Download the `.pbix` file from the link above  
+2. Open it using **Power BI Desktop** (free to install)  
+3. Use filters (device, region, user type) to explore segments  
+4. Navigate across 4 pages:
+   - Executive Summary → key decision
+   - Statistical Deep Dive → significance & confidence
+   - Segmentation → where the feature works
+   - Funnel → how users adopt the feature  
+
+💡 Tip: Start with the **Executive Summary**, then drill down into segments.
 
 ---
 
-## 📊 Dashboard Structure (Power BI)
-
-### 1. Executive Summary
-- KPI cards (Retention lift, p-value, relative lift)
-- Retention comparison chart
-- Decision callout
-
-### 2. Statistical Deep Dive
-- Segment-wise statistical results
-- Significance visualization
-- Confidence interval interpretation
-
-### 3. Segmentation Breakdown
-- Performance across devices and regions
-- Interactive filters (device, region)
-- Highlight: highest lift segment
-
-### 4. Adoption Funnel
-- Feature usage funnel (New vs Returning users)
-- Impact of feature usage on retention
-
----
 
 ## 🛠 Tools & Technologies
 - ![Python](https://img.shields.io/badge/Python-3.12-blue)
@@ -192,7 +184,7 @@ The feature is likely an **activation driver**, not a **retention enhancer** for
 ---
 
 ## Project Structure
-| File_Type | File_Name | Description |
+| Type  | File | Description |
 | --- | --- | --- |
 | Directory | P2_AB_Test_Analysis/ | Main project directory |
 | File | ab_test_data.csv | 5000-row simulated dataset |
@@ -215,38 +207,24 @@ python 03_statistical_analysis.py
 python 04_segmentation_analysis.py
 python 05_funnel_analysis.py
 python 06_visualizations.py
-```
-
-
-## 🚀 How to Use Dashboard
-
-1. Download the `.pbix` file  
-2. Open in Power BI Desktop  
-3. Explore the dashboard interactively  
+```  
 
 ---
 
-## 📌 Key Learning
-
-Statistical significance is critical in product decisions.  
-A visible lift in metrics does not always imply a meaningful impact — **validation through hypothesis testing is essential**.
-
 ## ⚠ Limitations & Next Steps
 
-While the experiment provides strong directional insights, a few limitations should be considered:
+**Limitations**
+- Simulated dataset may not capture full real-world variability  
+- External factors (seasonality, product changes) not modeled  
+- Feature exposure treated as binary (not depth of usage)
 
-- Simulated dataset may not capture all real-world behavioral variability  
-- External factors (seasonality, product changes) are not modeled  
-- Feature exposure intensity is not controlled (binary exposure vs actual usage depth)
+**Next Steps**
+- Validate results on real production data  
+- Test redesigned feature for returning users  
+- Analyze longer-term retention (Day-14 / Day-30)  
+- Improve feature discoverability for new users  
 
-### Next Steps
-
-- Run experiment on real production data  
-- Test feature variations for returning users  
-- Analyze long-term retention (Day-14 / Day-30)  
-- Explore causal drivers behind feature adoption  
-
-👉 This ensures the analysis evolves from **insight → iteration → product strategy**
+👉 Goal: evolve from **insight → experimentation → product strategy**
 
 ---
 ## Results Summary
@@ -265,4 +243,6 @@ I’m always open to meaningful conversations, feedback, or collaboration opport
 
 - LinkedIn: https://www.linkedin.com/in/workwitheesha/
 - Email: workwitheesha@gmail.com
+- 🗂 Portfolio: [Notion Case Study](https://eshasharma.notion.site/Product-Feature-Adoption-A-B-Test-Analysis-34899496b51c80f88bb8f09bd396ac0c?source=copy_link)
+
 
